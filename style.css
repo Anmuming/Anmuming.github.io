@@ -16,3 +16,7 @@ img {
   max-width: 50%;
   max-height: 100vh;
 }
+iframe {
+  display: block;
+  margin: 0 auto;
+}

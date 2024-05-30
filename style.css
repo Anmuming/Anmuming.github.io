@@ -17,8 +17,10 @@ img {
   max-height: 100vh;
 }
 iframe {
-  display: block;
-  margin: 0 auto;
-  width: 70%;
-  height: 70vh;
+    display: block;
+    margin: 0 auto;
+    width: 560px;
+    height: 315px;
+    max-width: 100%;
+    max-height: 50vh;
 }

@@ -1,1 +1,34 @@
+public class Location{
+  private int theRow;
+  private int theCol;
+  private int[][] grid;
+  public Location(int r,int c,int[][] g){
+    theRow=r;
+    theCol=c;
+    grid=g;
+  }
+ // public int getRow(){}
+  //public int getCol(){}
+  public int getNextLoc(int r,int c){
+    int min=0;
+    int intR1=grid[r+1][c];
+    int intC1=grid[r][c+1];
+    String strR1= Integer.toString(grid[r+1][c]);
+    String strC1= Integer.toString(grid[r][c+1]);
+    if(intR1>intC1){
+      if(strR1==null ){
+        return intC1;
+      } 
+      else if(strC1 ==null){
+        return intR1;
+      }
+      min+=intC1;
+    }
+    else{
+      min+=intR1;
+    }
+    return min;
+    }
+  
 
+}

@@ -1,1 +1,31 @@
+import java.util.*;
+public class WordCheck {
+  private ArrayList<String> wordList;
+  public WordCheck (ArrayList<String> words){
+    wordList =words;
+    
+  }
 
+  public boolean isWordChain(){
+    for(int i=1;i<wordList.size()-1;i++){
+      String c=wordList.get(i);
+      if((c.indexOf(c)) !=-1){
+        return true;
+      }
+    }
+    return false;
+  }
+  public ArrayList<String> createList(String t){
+    ArrayList <String> result= new ArrayList<String>();
+    for(int i =0;i<wordList.size();i++){
+      String c1=wordList.get(i);
+      if(c1.indexOf(t) !=-1){
+        String ct= c1.substring(c1.length());
+        String ct1=" ";
+        ct1+=ct;
+        result.add(ct1);
+      }
+    }
+    return result;
+  }
+}

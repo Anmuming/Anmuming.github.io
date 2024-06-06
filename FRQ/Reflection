@@ -3,3 +3,9 @@ I can't say that I have answered every question correctly.
 The FRQ questions can let me know clearly how much I have learned. Because of nervousness, 
 I spent more than 1 hour and 30 minutes on the multiple-choice questions and FRQ questions. 
 Unfortunately, I didn't finish all the FRQ.
+
+For question 1, I saw that the question mentioned that the bird has a 95% chance of eating food, 
+so I used Math.random to calculate the probability of the bird appearing. 
+However, the urgency of the exam made me nervous, so I immediately jumped to its for'loop without looking at the probability of the bear. 
+In other words, my forloop skipped the bear, and this defect was magnified. 
+Part B should also have the appearance of a bear, making the food directly 0, but I did not complete this probability in part A. 

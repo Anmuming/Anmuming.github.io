@@ -1,14 +1,1 @@
-import java.util.*;
-public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello world!");
-    ArrayList<String> wordList0=new ArrayList<String>();
-    wordList0.add("catch");
-    wordList0.add("bobcat");
-    wordList0.add("catchacat");
-    wordList0.add("cat");
-    wordList0.add("at");
-    WordCheck w= new WordCheck(wordList0);
-    System.out.println(w.isWordChain());
-    System.out.println(w.createList("cat"));
-  }
+

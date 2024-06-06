@@ -14,3 +14,8 @@ Part B should also have the appearance of a bear, making the food directly 0, bu
 Question 2: I didn’t finish this question. At first, I saw that both teams would return when they scored, 
 which seemed easy, but I found a difficulty, that is, the losing team had to give the winning team the right to print.
 However, in the exam, I didn’t expect to use true and false to customize the if else system.
+
+Question 3: I made a half-finished product, because at that time I customized forloop according to plan A,
+but after I reviewed the question, I thought it was unnecessary, so I cancelled the original plan. 
+It requires the next number and the number below. If the two are smaller, it returns. 
+When I wrote this step, the exam time was almost up, and part A and part B were not complete.

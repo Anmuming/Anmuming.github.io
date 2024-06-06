@@ -1,1 +1,49 @@
 
+public class Scoreboard {
+  String t1;
+  String t2;
+  int s1=0;
+  int s2=0;
+  boolean turn;
+  boolean turn2;
+  public Scoreboard (String str1,String str2){
+    t1=str1;
+    t2=str2;
+    turn=true;
+    turn2=false;
+  }
+  
+  public void recordPlay(int p){
+    if(p==0){
+      if(turn==true){
+        turn=false;
+        turn2=true;
+      }
+      else {
+        turn = true;
+        turn2 =false;
+      }
+    }
+    else{
+      if(turn==true){
+        s1+=p;
+      }
+      else{
+        s2+=p;
+      }
+    }
+  }
+  public String getScore(){
+    String i=String.valueOf(s1);
+    String i2=String.valueOf(s2);
+    String b=" ";
+    if(turn==true){
+      return b+=i+"-"+i2+"-"+t1;
+    }
+    else{
+      return b+=i+"-"+i2+"-"+t2;
+    }
+  }
+
+  
+}

@@ -1,1 +1,44 @@
+public class Feeder{
+  private int currentFood;
+  private int count = (int) (Math.random()*(41)+10);
+  private int poss= (int)(Math.random()*100+1);
+  private int needFood=0;
 
+
+  public Feeder(int s){
+    currentFood=s;
+  }
+  public void simulateOneDay(int numBirds){
+    if (poss>=1 || poss <=95){
+      needFood=count*numBirds;
+      currentFood=currentFood-needFood;
+    }
+    else{
+      currentFood=0;
+    }
+  }
+  public int getFood(){
+    return currentFood;
+  }
+
+
+  public int simulateManyDays(int numBirds, int numDays){
+    if(currentFood==0){
+      return 0;
+    }
+    else{
+      for(int i=0;i< numDays;i++){
+        if (poss>=1 || poss <=95){
+          needFood=count*numBirds;
+          currentFood=currentFood-needFood;
+          return currentFood;
+        }
+        else{
+          return i;
+          
+        }
+      }
+    }
+    return currentFood;
+  }
+}
